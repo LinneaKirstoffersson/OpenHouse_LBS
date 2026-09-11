@@ -1,0 +1,128 @@
+
+.big-shoulders- {
+  font-family: "Big Shoulders", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+/*Får inte google fonts till att funka så länge är Verdana */
+.onestregularBrödtext-{
+    font-family: "onest" Verdana;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.onestmediumIngress- {
+  font-family: "Onest", Verdana;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.onestboldunderrubrik-{
+    font-family: "onest" Verdana;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+}
+
+header {    /*typ en kopia av LBS lunds header*/
+    position: sticky;
+    font-family: "onestboldunderrubrik", Verdana; /*osäker på hur man länkar rätt*/
+    font-size: 15px;
+    font-weight: 900;
+    max-height: 97px;
+    position: sticky;  
+    top: 0;             /*Chatgpt la till för att headern faktiskt skulle fastna*/
+    background-color: #111111;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.headContainer {    /*container för att hålla rätt på allt i headern*/
+    display: flex;
+    align-items: center;
+    max-height: 97px;
+}
+
+.loggo{ /*LBS loggan */
+    max-height: 48px;
+}
+
+.logo img {
+    width: 180px;
+    max-height: 48px;
+    margin-right: 67px;
+}
+
+.navs {
+    display: flex;
+    align-items: center;
+}
+
+.navs a {
+    display: block;
+    margin-left: 45px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.Mapbutton {        /*knapp som tar än till kartan*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    background-color: #FFEB3B;
+    height: 35px;
+    width: 100px;
+}
+.Mapbutton a{
+    color: #111111;
+
+}
+
+
+#FirstBlock {       /*första av typ 3 eller 4 block*/
+    height: 570px;
+    background-image: url('bakground.png'); /*placeholder bakgrunds bild Kanske byter till en bild på skolan bilden ska också ha svarta kuber liknade lbs hemsidas bilder*/
+    background-repeat: no-repeat;                        
+    background-size: cover;  
+    font-family: "Big Shoulders", Impact;
+    overflow: auto;
+}
+
+.open {
+    width: 350px;
+    height: 130px;
+    background-color: #002736;
+    margin-top: 100px;
+    margin-left: 100px;
+
+}
+.open h1{
+    font-size:100px;
+    color: #00FFFF;
+}
+
+.house {
+    width: 350px;
+    height: 130px;
+    background-color: #002736;
+    margin-top: 100px;
+    margin-left: 100px;
+
+}
+.house h1{
+    font-size:100px;
+    color: #00FFFF;
+}
