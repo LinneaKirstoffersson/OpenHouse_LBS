@@ -1,33 +1,25 @@
 
-.big-shoulders- {
-  font-family: "Big Shoulders", sans-serif;
+
+.onest {
+  font-family: "Onest", Verdana;
   font-optical-sizing: auto;
-  font-weight: 600;
   font-style: normal;
 }
 
 
-/*Får inte google fonts till att funka så länge är Verdana */
-.onestregularBrödtext-{
-    font-family: "onest" Verdana;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+.big-shoulders-huvudrubrik {
+  font-family: "Big Shoulders", Impact;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: bold;
 }
 
-.onestmediumIngress- {
-  font-family: "Onest", Verdana;
-  font-optical-sizing: auto;
+.ibm-plex-mono-medium-kompletering {
+  font-family: "IBM Plex Mono", 'Courier New';
   font-weight: 500;
   font-style: normal;
 }
 
-.onestboldunderrubrik-{
-    font-family: "onest" Verdana;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
 
 
 body {
@@ -36,9 +28,9 @@ body {
 
 header {    /*typ en kopia av LBS lunds header*/
     position: sticky;
-    font-family: "onestboldunderrubrik", Verdana; /*osäker på hur man länkar rätt*/
+    font-family:"onest",Verdana;
     font-size: 15px;
-    font-weight: 900;
+    font-weight: bold;
     max-height: 97px;
     position: sticky;  
     top: 0;             /*Chatgpt la till för att headern faktiskt skulle fastna*/
@@ -82,23 +74,45 @@ header {    /*typ en kopia av LBS lunds header*/
     justify-content: center;
     align-items: center;
     font-weight: 500;
-    background-color: #FFEB3B;
+    color: #00FFFF;
     height: 35px;
     width: 100px;
-}
-.Mapbutton a{
-    color: #111111;
+    border: #00FFFF;
+    border-width: 5px;
+    border-style: solid;
+
 
 }
+
+.Mapbutton:hover {
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+}
+
+.Mapbutton a{ /*text färg*/
+   color: #00FFFF;
+}
+
 
 
 #FirstBlock {       /*första av typ 3 eller 4 block*/
     height: 570px;
-    background-image: url('bakground.png'); /*placeholder bakgrunds bild Kanske byter till en bild på skolan bilden ska också ha svarta kuber liknade lbs hemsidas bilder*/
+    background-image:       /*Chat gpt visa att de kunde ligga undervarandra för att inte täcka varandra*/
+    linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)), /*taget från w3schools*/
+    linear-gradient(to top, rgb(0, 0, 0), rgba(255, 255, 255, 0)),
+    url('LBS.jpeg');
     background-repeat: no-repeat;                        
-    background-size: cover;  
+    background-size: /*chat gpt fixade storleken av var och en bakrunds del*/
+    cover,
+    100% 50px,
+    cover;
+    background-position: /*chat gpt fixade positonen av var och en bakrunds del*/
+    center,
+    bottom,
+    center;
     font-family: "Big Shoulders", Impact;
     overflow: auto;
+
 }
 
 .open {
@@ -126,3 +140,27 @@ header {    /*typ en kopia av LBS lunds header*/
     font-size:100px;
     color: #00FFFF;
 }
+
+
+#SecondBlock {
+    background-color: #330026;
+    background-image: linear-gradient(to bottom, #14000f, rgba(0, 0, 0, 0));
+    background-size: 100% 50px;
+    background-repeat: no-repeat;
+
+    background-position:
+        top;
+    margin: 0;
+    color: #FF0079;
+    height: 500px;
+    
+
+}
+
+#SecondBlock h2 {
+    font-size: 70px;
+    font-family: "Big Shoulders", Impact;
+    margin-top: 0;
+    padding: 100px 15px 15px 15px ;
+}
+
