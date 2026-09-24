@@ -60,6 +60,7 @@ header {    /*typ en kopia av LBS lunds header*/
 .navs {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .navs a {
@@ -77,6 +78,7 @@ header {    /*typ en kopia av LBS lunds header*/
     color: #00FFFF;
     height: 35px;
     width: 100px;
+    margin-left: 0px;
     border: #00FFFF;
     border-width: 5px;
     border-style: solid;
@@ -100,7 +102,7 @@ header {    /*typ en kopia av LBS lunds header*/
     background-image:       /*Chat gpt visa att de kunde ligga undervarandra för att inte täcka varandra*/
     linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)), /*taget från w3schools*/
     linear-gradient(to top, rgb(0, 0, 0), rgba(255, 255, 255, 0)),
-    url('LBS.jpeg');
+    url('LBS.jpg');
     background-repeat: no-repeat;                        
     background-size: /*chat gpt fixade storleken av var och en bakrunds del*/
     cover,
@@ -116,27 +118,39 @@ header {    /*typ en kopia av LBS lunds header*/
 }
 
 .open {
-    width: 350px;
-    height: 130px;
-    background-color: #002736;
-    margin-top: 100px;
+    width: 300px;
+    height: 125px;
+    background-color: #00FFFF;
+    margin-top: 150px;
     margin-left: 100px;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .open h1{
+    margin: 0px;
     font-size:100px;
-    color: #00FFFF;
+    color: #002736;
 }
 
 .house {
-    width: 350px;
+    width: 250px;
     height: 130px;
     background-color: #002736;
-    margin-top: 100px;
-    margin-left: 100px;
+    padding-top: 0;
+    margin-left: 300px;
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .house h1{
+    margin: 0;
     font-size:100px;
     color: #00FFFF;
 }
@@ -158,9 +172,24 @@ header {    /*typ en kopia av LBS lunds header*/
 }
 
 #SecondBlock h2 {
-    font-size: 70px;
+    font-size: 80px;
     font-family: "Big Shoulders", Impact;
     margin-top: 0;
-    padding: 100px 15px 15px 15px ;
+    padding: 100px 1px 15px 15px ;
+}
+
+p.underrubrik {
+    font-family:"onest",Verdana;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Programbtn{
+    width: fit-content;
+    background-color: #FF0079;
+    color: #330026;
+    font-family:"onest",Verdana;
+    font-weight: bold;
+    font-size: 20px;
 }
 
