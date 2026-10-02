@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LBS Öppet Hus </title>
+    <link rel="stylesheet" href="Style.css">
+    <!--Google fonts-->
+    <!--onest font for: ingress, underubrik och brödtext-->
+    <!--bigshoulders font for: headlines-->
+    <!--IBM Plex Mono medium-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,800&family=IBM+Plex+Mono:wght@500&family=Onest:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="headContainer">
+            <div class="loggo">
+                <a href="index.html" class="logo"><img src="lbsLogo.png" alt="lbs logo with text"></a>
+            </div>
+            <div class="navs">
+                <a href="https://lbs.se/lund/"> Om LBS </a>
+                <a href="Program.html"> Program</a>
+                <a href="index.html">Hem</a>
+                <div class="Mapbutton">
+                    <a href="karta.html">Karta </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="AHouse" >
+        <div class="Floors">
+            <h5> A HUSET </h5>
+            <p> våning:</p>
+            <p class="floors"> 1 </p>
+            <p class="floors"> 2 </p>
+            <p class="floors"> 3 </p>
+        </div>
+        <div class="mapContainer"> <!--ihopsättning av stack overflow som chatgpt har förklarat och jag sedan skrivit om så det passar min hemsida och karta-->
+            <img src="AHouseFloor_1.png"  height="340px" width="310px" usemap="#AHouseFoor_1" class="AHouseFloor_1">
+            <map name="AHouseFloor_1" >
+            <area shape="circle" coords="100,125,20" alt="Matsalen" id="Matsalen">
+            <area shape="circle" coords="63,303,20" alt="Repstudio" id="Repstudio">
+            </map>
+            <div id="matsalentooltip"> Matsalen, här äter alla ellever en god lunch serverad av Marvin</div>
+        </div>
+
+    </section>
+    <script src="Script.js"></script>
+</body>

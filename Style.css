@@ -20,7 +20,14 @@
   font-style: normal;
 }
 
+h1, h2, h3, h4, h5{
+    font-family: "Big Shoulders", Impact;
+    cursor:default;
+}
 
+p{
+    cursor: default;
+}
 
 body {
     margin: 0;
@@ -63,7 +70,7 @@ header {    /*typ en kopia av LBS lunds header*/
     justify-content: center;
 }
 
-.navs a {
+.navs > a {
     display: block;
     margin-left: 45px;
     color: #FFFFFF;
@@ -78,7 +85,7 @@ header {    /*typ en kopia av LBS lunds header*/
     color: #00FFFF;
     height: 35px;
     width: 100px;
-    margin-left: 0px;
+    margin-left: 50px;
     border: #00FFFF;
     border-width: 5px;
     border-style: solid;
@@ -92,7 +99,11 @@ header {    /*typ en kopia av LBS lunds header*/
 }
 
 .Mapbutton a{ /*text färg*/
-   color: #00FFFF;
+    color: #00FFFF;
+    text-align: left ;
+    font-family:"onest",Verdana;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 
@@ -121,9 +132,8 @@ header {    /*typ en kopia av LBS lunds header*/
     width: 300px;
     height: 125px;
     background-color: #00FFFF;
-    margin-top: 150px;
-    margin-left: 100px;
-    margin-bottom: 0px;
+    margin: 150px 0 0 100px;
+
     padding-top: 5px;
     letter-spacing: 4px;
     display: flex;
@@ -166,23 +176,36 @@ header {    /*typ en kopia av LBS lunds header*/
         top;
     margin: 0;
     color: #FF0079;
-    height: 500px;
-    
+    height: 570px;
 
 }
 
 #SecondBlock h2 {
     font-size: 80px;
     font-family: "Big Shoulders", Impact;
-    margin-top: 0;
-    padding: 100px 1px 15px 15px ;
+    margin: 0px 0px 0px 70px;
+    padding-top: 100px  ;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
+
 
 p.underrubrik {
     font-family:"onest",Verdana;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 20px;
+    margin: 30px 0 30px 70px;
 }
+
+.buttoncontainer {
+    display: flex;
+
+    font-family:"onest",Verdana;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
 
 .Programbtn{
     width: fit-content;
@@ -190,6 +213,288 @@ p.underrubrik {
     color: #330026;
     font-family:"onest",Verdana;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
+    margin: 0 20px 0 70px;
+    padding: 20px 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s ease-in;
 }
+
+
+.Programbtn:Hover {
+    transform: scale(1.1);
+}
+
+.mappointer {
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.mappointer p {
+    color:#FF0079;
+    font-size: 20px;
+    text-align: left;
+}
+
+#ThirdBlock{
+    display: flex;
+    justify-content: left;
+
+    background-color: #111111;
+}
+
+#ThirdBlock h4{
+    font-size: 50px;
+    margin: 100px 20px 10px 70px;
+    color: #FFFFFF;
+}
+
+
+.img_map{
+    margin: 100px 10px; 
+}
+.ImgPil {
+    margin: 0;
+}
+
+.findPrograms{
+    color:#FFFFFF;
+    font-family:"onest",Verdana;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 50px 0px 10px 0px;
+}
+
+#ThirdBlock .Mapbutton{
+    margin-left: 22vw;
+}
+
+
+/*KARTA.HTML sidans css*/
+
+
+#AHouse{
+    margin: 100px 0 0 100px;
+    display: flex;
+}
+
+.Floors{
+    display:block;
+    margin-right: 40px;
+}
+
+.Floors h5{
+    font-size: 45px;
+    margin: 0;
+}
+
+#matsalentooltip {
+    display: none;
+    position: absolute;
+
+    background-color: #330026;
+    color: #00FFFF;
+
+    padding: 10px;
+    border: 2px solid #00FFFF;
+
+    font-family: "Onest", Verdana;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================            Hadde ont om tid/ orkade inte ändra storkelen för hand så chatgpt har gjort så att det ser bra ut på telefon
+   PHONE RESPONSIVENESS
+   ========================= */
+
+@media screen and (max-width: 600px) {
+
+    /* HEADER */
+    header {
+        padding: 12px 15px;
+        max-height: none;
+    }
+
+    .headContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        max-height: none;
+    }
+
+    .logo img {
+        width: 120px;
+        max-height: 40px;
+        margin-right: 0;
+    }
+
+    .navs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navs > a {
+        margin-left: 0;
+        font-size: 12px;
+    }
+
+    .Mapbutton {
+        width: 75px;
+        height: 32px;
+        margin-left: 0;
+        border-width: 2px;
+        box-sizing: border-box;
+    }
+
+    .Mapbutton a {
+        font-size: 12px;
+        margin: 0;
+    }
+
+
+    /* FIRST BLOCK: ÖPPET HUS */
+    #FirstBlock {
+        min-height: 450px;
+        height: auto;
+        padding: 60px 15px;
+        box-sizing: border-box;
+        background-position: center, bottom, center;
+    }
+
+    .open {
+        width: min(260px, 85%);
+        height: 100px;
+        margin: 30px 0 0 0;
+        padding: 0;
+        letter-spacing: 2px;
+        box-sizing: border-box;
+    }
+
+    .open h1 {
+        font-size: clamp(55px, 15vw, 75px);
+    }
+
+    .house {
+        width: min(220px, 75%);
+        height: 100px;
+        margin: 0 0 0 auto;
+        padding: 0;
+        letter-spacing: 2px;
+        box-sizing: border-box;
+    }
+
+    .house h1 {
+        font-size: clamp(55px, 15vw, 75px);
+    }
+
+
+    /* SECOND BLOCK: WELCOME */
+    #SecondBlock {
+        height: auto;
+        min-height: 500px;
+        padding: 0 20px 40px;
+        box-sizing: border-box;
+    }
+
+    #SecondBlock h2 {
+        font-size: clamp(36px, 9vw, 52px);
+        margin: 0;
+        padding-top: 55px;
+        padding-bottom: 0;
+        overflow-wrap: break-word;
+    }
+
+    p.underrubrik {
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 20px 0 25px;
+    }
+
+    .buttoncontainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .Programbtn {
+        margin: 0;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .mappointer {
+        padding: 10px 15px;
+        box-sizing: border-box;
+    }
+
+
+    /* THIRD BLOCK: MAP */
+    #ThirdBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #ThirdBlock h4 {
+        font-size: clamp(30px, 8vw, 42px);
+        margin: 30px 0 15px;
+    }
+
+    .img_map {
+        margin: 15px 0;
+        max-width: 100%;
+    }
+
+    .img_map img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .ImgPil {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .findPrograms {
+        font-size: clamp(25px, 7vw, 34px);
+        margin: 30px 0 10px;
+    }
+
+    #ThirdBlock .Mapbutton {
+        margin-left: 52vw;
+    }
+
+}
+
 
