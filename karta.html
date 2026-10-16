@@ -33,21 +33,27 @@
         <div class="Floors">
             <h5> LBS inifrån </h5>
             <p> våning:</p>
-            <p class="floors"> 1 </p>
-            <p class="floors"> 2 </p>
-        </div>
-        <div class="mapContainer"> <!--ihopsättning av stack overflow som chatgpt har förklarat och jag sedan skrivit om så det passar min hemsida och karta-->
-            <img src="FirstFloorMap.png"  height="320" width="330px" usemap="#FirstFloorMap" class="FirstFloorMap">
+            <button class="floors" data-floor="1"> 1 </button>  <!--Data-floor chat gpt made to be abel to show two diffrent floors -->
+            <button class="floors" data-floor="2"> 2 </button>
+        </div>                     <!--chat gpt added id floor1 to match the data-floor-->
+        <div class="mapContainer" id="floor1"> <!--ihopsättning av stack overflow som chatgpt har förklarat och jag sedan skrivit om så det passar min hemsida och karta-->
+            <img src="FirstFloorMap.png"  height="320" width="330px" usemap="#FirstFloorMap" class="FirstFloorMap" alt="karta över våning 1">
             <map name="FirstFloorMap" >
             <area shape="circle" coords="32,43,30" alt="Matsalen" id="Matsalen">
             <area shape="circle" coords="23,108,20" alt="Repstudio" id="Repstudio">
             </map>
             <div id="Matsalentooltip"> 
-                <p> MATSALEN: här äter alla elever en god lunch serverad av Marvin</p>
+                <p> MATSALEN: här äter alla elever en jättegod lunch serverad av vår hjälte Marvin</p>
             </div>
             <div id="Repstudiotooltip">
                 <p> REPSTUDION: här övar musikarna </p>
             </div>
+        </div>
+        <div class="mapContainer" id="floor2" hidden> <!--chat gpt added hidden to hide this floor wile floor one is up-->  
+            <img src="SecondFloorMap.png" width="330" height="320" usemap="#SecondFloorMap" class="SecondFloorMap" alt="Karta över våning 2">
+            <map name="SecondFloorMap">
+
+            </map>
         </div>
     </section>
     <script src="Script.js"></script>

@@ -60,9 +60,41 @@ const places = [ /*skapar en array för att hålla de olika värderna i */
     ["Repstudio", "Repstudiotooltip"]
 ];
 
+//floor 2 plats tool tip
+
+const floorButtons = document.querySelectorAll(".Floors .floors"); //visar den valda sidan
+
+floorButtons.forEach(function(button) {    //skapar en funktion för button och sedan en funktoin för clik på knappen
+    button.addEventListener("click", function() {
+
+        const selectedFloor = button.dataset.floor;    //hämtar data från data-floor och sedan sparar infon i selectfloor 
+          
+        //gömmer båda sidorna tills en är vald                                              
+        document.querySelector("#floor1").hidden = true;
+        document.querySelector("#floor2").hidden = true;
+
+        document.querySelectorAll(".tooltip").forEach(function(tooltip) { 
+            tooltip.style.display = "none"; // gömmer alla tool tips som inte är aktiva
+        });
+
+        document.querySelector("#floor" + selectedFloor).hidden = false; //visar kartan man har valtmed hjälp av queryselector 
+
+        floorButtons.forEach(function(otherButton) { //
+            otherButton.classList.remove("active"); //visar vilken våning som är våning med hj
+        });
+
+        button.classList.add("active"); //skapar css klass för den våningen som är vald
+
+    });
+});
+
+
+
 places.forEach(function(place) { /*foreach loop som går igenom varje array och kör funktionen för dem */
     const area = document.querySelector("#" + place[0]);
     const tooltip = document.querySelector("#" + place[1]);
+
+    if (!area || !tooltip) return;  //kollar om arean och tool tip finns innan den kör funktionerna
 
     area.addEventListener("mouseenter", function(){
         tooltip.style.display = "block"; 
