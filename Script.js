@@ -56,7 +56,7 @@ document.addEventListener("click", function(){
 
 /*föränkling för att göra det lättare att ha flera punkter. chatgpt föränklade den förra delen av kod och förklarade den så jag fattar "alla komentarer är mina för att jag ska förstå och kommaihåg */
 const places = [ /*skapar en array för att hålla de olika värderna i */
-    ["matsalen","matsalentooltip" ],
+    ["Matsalen","Matsalentooltip" ],
     ["Repstudio", "Repstudiotooltip"]
 ];
 

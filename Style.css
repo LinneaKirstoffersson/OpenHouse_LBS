@@ -334,18 +334,18 @@ font-family: "IBM Plex Mono", 'Courier New';
 
 
 #House{
-    margin: 30px 0 0 5px;
+    margin: 50px 0 0 5px;
     display: flex;
 
 }
 
 .Floors{
     display:block;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 .Floors h5{
-    font-size: 20px;
+    font-size: 17px;
     margin: 0;
 }
 
@@ -376,12 +376,12 @@ font-family: "IBM Plex Mono", 'Courier New';
 
 
 #matsalentooltip{
-    left: 100px;
-    top: 125px;
+    left: 34px;
+    top: 45px;
 }
 #Repstudiotooltip{
-    left: 63px;
-    top: 303px;
+    left: 23px;
+    top: 108px;
 
 }
 
