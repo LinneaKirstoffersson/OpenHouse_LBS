@@ -31,6 +31,7 @@ p{
 
 body {
     margin: 0;
+    padding: 0;
 }
 
 header {    /*typ en kopia av LBS lunds header*/
@@ -114,7 +115,7 @@ header {    /*typ en kopia av LBS lunds header*/
     background-image:       /*Chat gpt visa att de kunde ligga undervarandra för att inte täcka varandra*/
     linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0)), /*taget från w3schools*/
     linear-gradient(to top, rgb(0, 0, 0), rgba(255, 255, 255, 0)),
-    url('LBS.jpg');
+    url('LBS_bakgrund.png');
     background-repeat: no-repeat;                        
     background-size: /*chat gpt fixade storleken av var och en bakrunds del*/
     cover,
@@ -212,6 +213,7 @@ p.underrubrik {
     width: fit-content;
     background-color: #FF0079;
     color: #330026;
+    text-decoration: none;
     font-family:"onest",Verdana;
     font-weight: bold;
     font-size: 15px;
@@ -225,6 +227,8 @@ p.underrubrik {
 
 .Programbtn:Hover {
     transform: scale(1.1);
+
+
 }
 
 .mappointer {
@@ -242,7 +246,6 @@ p.underrubrik {
 #ThirdBlock{
     display: flex;
     justify-content: left;
-
     background-color: #111111;
 }
 
@@ -256,11 +259,12 @@ p.underrubrik {
 .img_map{
     margin: 100px 10px; 
 }
-.ImgPil {
-    margin: 0;
-}
+
 
 .findPrograms{
+    display: block;
+    text-align: center;
+    align-items: center;
     color:#FFFFFF;
     font-family:"onest",Verdana;
     font-weight: bold;
@@ -269,27 +273,79 @@ p.underrubrik {
 }
 
 #ThirdBlock .Mapbutton{
-    margin-left: 22vw;
+    margin-left: 39%;
 }
+
+#FourthBlock{
+    display:block;
+    align-items: center;
+    text-align: center;
+}
+
+#FourthBlock h3{
+    font-size: 50px;
+}
+
+.program_bilder{
+    margin: 20px 0 20px 0;
+}
+
+
+
+
+
+footer {
+    background-color: #111111;
+    height:auto;
+    padding: 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+footer img{
+    margin: 100px 0 20px 0;
+}
+
+.footer_contact {
+    color:#FFFFFF;
+    padding-bottom: 50px;
+}
+
+.footer_contact h5 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_contact p{
+font-family: "IBM Plex Mono", 'Courier New';
+}
+
+
+
+
+
+
 
 /* =========================    
    karta.html styling 
    ========================= */
 
 
-#AHouse{
-    margin: 100px 0 0 100px;
+#House{
+    margin: 30px 0 0 5px;
     display: flex;
-    height: 700px;
+
 }
 
 .Floors{
     display:block;
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 .Floors h5{
-    font-size: 45px;
+    font-size: 20px;
     margin: 0;
 }
 
@@ -495,15 +551,15 @@ p.underrubrik {
 
     /* THIRD BLOCK: MAP */
     #ThirdBlock {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        display: block;
+        text-align: center;
+
         padding: 20px;
         box-sizing: border-box;
     }
 
     #ThirdBlock h4 {
-        font-size: clamp(30px, 8vw, 42px);
+        font-size: clamp(40px, 8vw, 42px);
         margin: 30px 0 15px;
     }
 
@@ -519,23 +575,16 @@ p.underrubrik {
         height: auto;
     }
 
-   .findPrograms {
+    .ImgPil {
+        text-align: center;
+    }
+
+    .findPrograms {
         font-size: clamp(25px, 7vw, 34px);
         margin: 30px 0 10px;
-        display: block;
-        justify-content: center;
-    }
-
-    .ImgPil {
-        justify-content: center;
-        max-width: 100%;
-        height: auto;
     }
 
 
-    #ThirdBlock .Mapbutton {
-        margin-left: 52vw;
-    }
 
 }
 
