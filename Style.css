@@ -339,6 +339,11 @@ font-family: "IBM Plex Mono", 'Courier New';
     display: flex;
 
 }
+.Floors p{
+    font-family: "Onest", Verdana;
+    font-weight: 600;
+    font-size: 15px;
+}
 
 .Floors .floors {
     display: block;
@@ -381,7 +386,14 @@ font-family: "IBM Plex Mono", 'Courier New';
 
 #matsalentooltip, 
 #Repstudiotooltip,
-#B-salentooltip
+#B-salentooltip,
+#Musikstudiontooltip,
+#Filmstudiotooltip,
+#Fotostudiotooltip,
+#FotoFilmtooltip,
+#PoddRumtooltip,
+#AWAItooltip,
+#Spelgrafiktooltip
 {
     display: none;
     position: absolute;
@@ -396,50 +408,67 @@ font-family: "IBM Plex Mono", 'Courier New';
     z-index: 10;
 }
 
-
-
 #matsalentooltip{
     left: 34px;
     top: 45px;
 }
 #Repstudiotooltip{
-    left: 23px;
+    left: 38px;
     top: 108px;
 
 }
 
 #B-salentooltip{
-    left: 246px;
+    left: 230px;
     top: 40px;
+    
 }
 
-{
-    left: ;
-    top: ;
+#Musikstudiontooltip{
+    left: 292px;
+    top: 140px;
 }
 
-{
-    left: ;
-    top: ;
+#Filmstudiotooltip{
+    left: 38px ;
+    top: 206px;
 }
 
-{
-    left: ;
-    top: ;
+#Fotostudiotooltip{
+    left: 51px;
+    top: 206px;
 }
 
-{
-    left: ;
-    top: ;
+#FotoFilmtooltip{
+    left: 84px;
+    top: 206px;
 }
 
-{
-    left: ;
-    top: ;
+#PoddRumtooltip{
+    left: 110px;
+    top: 188px;
+}
+
+#AWAItooltip{
+    left: 55px;
+    top: 277px;
+}
+
+#Spelgrafiktooltip{
+    left: 77px;
+    top: 310px;
 }
 
 #matsalentooltip::after,
-#Repstudiotooltip::after
+#Repstudiotooltip::after,
+#B-salentooltip::after,
+#Musikstudiontooltip::after,
+#Filmstudiotooltip::after,
+#Fotostudiotooltip::after,
+#FotoFilmtooltip::after,
+#PoddRumtooltip::after,
+#AWAItooltip::after,
+#Spelgrafiktooltip::after
 {        /*tagit från w3shools*/
     content: "";
     position: absolute;

@@ -58,7 +58,14 @@ document.addEventListener("click", function(){
 const places = [ /*skapar en array för att hålla de olika värderna i */
     ["Matsalen","Matsalentooltip" ],
     ["Repstudio", "Repstudiotooltip"],
-    ["B-salen", "B-salentooltip"]
+    ["B-salen", "B-salentooltip"],
+    ["Musikstudion", "Musikstudiontooltip"],
+    ["Filmstudio", "Filmstudiotooltip"],
+    ["Fotostudio","Fotostudiotooltip"],
+    ["FotoFilm","FotoFilmtooltip"],
+    ["PoddRum","PoddRumtooltip"],
+    ["AWAI", "AWAItooltip"],
+    ["Spelgrafik", "Spelgrafiktooltip"]
 ];
 
 //floor 2 plats tool tip

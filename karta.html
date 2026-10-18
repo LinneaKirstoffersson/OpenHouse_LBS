@@ -15,13 +15,13 @@
 
 <body>
     <header>
-        <div class="headContainer">
+        <div class="headContainer"> <!--huvud container -->
             <div class="loggo">
                 <a href="index.html" class="logo"><img src="lbsLogo.png" alt="lbs logo with text"></a>
             </div>
             <div class="navs">
                 <a href="https://lbs.se/lund/"> Om LBS </a>
-                <a href="Program.html"> Program</a>
+                <a href="index.html#FourthBlock"> Program</a>
                 <a href="index.html">Hem</a>
                 <div class="Mapbutton">
                     <a href="karta.html">Karta </a>
@@ -33,15 +33,22 @@
         <div class="Floors">
             <h5> LBS inifrån </h5>
             <p> våning:</p>
-            <button class="floors" data-floor="1"> 1 </button>  <!--Data-floor chat gpt made to be abel to show two diffrent floors -->
+            <button class="floors" data-floor="1"> 1 </button>  <!--Data-floor chat gpt lade till så att man kan byta mellan våningarna -->
             <button class="floors" data-floor="2"> 2 </button>
-        </div>                     <!--chat gpt added id floor1 to match the data-floor-->
+        </div>                     <!--chat gpt la till id floor1 för att defigera vilken våning man är på-->
         <div class="mapContainer" id="floor1"> <!--ihopsättning av stack overflow som chatgpt har förklarat och jag sedan skrivit om så det passar min hemsida och karta-->
             <img src="FirstFloorMap.png"  height="320px" width="330px" usemap="#FirstFloorMap" class="FirstFloorMap" alt="karta över våning 1">
-            <map name="FirstFloorMap" >
-            <area shape="circle" coords="32,43,30" alt="Matsalen" id="Matsalen">
-            <area shape="circle" coords="23,108,20" alt="Repstudio" id="Repstudio">
-            <area shape="circle" coords="246,40,30" alt="B-salen"  id="B-Salen">
+            <map name="FirstFloorMap" > <!--våning ett karta med olkia area cirklar på kartan och medföljand tool tips som förklarar varje rum på skolan-->
+            <area shape="circle" coords="32,43,40" alt="Matsalen" id="Matsalen">
+            <area shape="circle" coords="23,108,40" alt="Repstudio" id="Repstudio">
+            <area shape="circle" coords="246,40,40" alt="B-salen"  id="B-Salen">
+            <area shape="circle" coords="292,140,40" alt="Musikstudion"  id="Musikstudion">
+            <area shape="circle" coords="18,206,20" alt="Filmstudio"  id="Filmstudio">
+            <area shape="circle" coords="51,206,20" alt="Fotostudio"  id="Fotostudio">
+            <area shape="circle" coords="84,206,20" alt="FotoFilm"  id="FotoFilm">
+            <area shape="circle" coords="110,188,20" alt="PoddRum"  id="PoddRum">
+            <area shape="circle" coords="55,277,30" alt="AWAI"  id="AWAI">
+            <area shape="circle" coords="77,310,30" alt="Spelgrafik"  id="Spelgrafik">
             </map>
             <div id="Matsalentooltip"> 
                 <p> MATSALEN: här äter alla elever lunch serverad av Marvin</p>
@@ -50,12 +57,33 @@
                 <p> REPSTUDION: här övar musikarna </p>
             </div>
             <div id="B-salentooltip">
-                <p> NO-salen: Här har vi roliga laborationer i fysik, kemi och biologi</p>
+                <p> NO-salen: här har vi roliga laborationer i fysik, kemi och biologi</p>
             </div>
+                 <div id="Musikstudiontooltip">
+                <p> Musikstudion: Här är musik lektioner</p>
+            </div>
+            <div id="Filmstudiotooltip"> 
+                <p>Filmstudion: här filmas en massa roliga saker </p>
+            </div>
+            <div id="Fotostudiotooltip"> 
+                <p>Fotostudion: här fottas de finnaste bilderna </p>
+            </div>
+            <div id="FotoFilmtooltip"> 
+                <p> Foto-Film: i detta klasrumet lär man sig allt om fotgraftering och filmning</p>
+            </div>
+            <div id="PoddRumtooltip"> 
+                <p> Poddrummet: här spellas skolans egna podd in</p>
+            </div>
+            <div id="AWAItooltip"> 
+                <p> AI - webbutvekling: i detta klassrum Lär man sig programera hemsidor och bemästra AI </p>
+            </div>
+            <div id="Spelgrafiktooltip"> 
+                <p> Spelgrafik: här sitter spelgrafikerna och desingnar snygga och intresanta spel </p>
+
         </div>
         <div class="mapContainer" id="floor2" hidden> <!--chat gpt added hidden to hide this floor wile floor one is up-->  
             <img src="SecondFloorMap.png" width="330" height="320" usemap="#SecondFloorMap" class="SecondFloorMap" alt="Karta över våning 2">
-            <map name="SecondFloorMap">
+            <map name="SecondFloorMap"> <!--karta över andra våninga a huste och d huset med are cirklar för alla klassrum med medföljande tooltips-->
                 <area shape="circle" coords="32,43,30" alt="Matsalen" id="Matsalen">
                 <area shape="circle" coords="23,108,20" alt="Repstudio" id="Repstudio">
             </map>
