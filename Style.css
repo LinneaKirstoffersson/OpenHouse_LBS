@@ -372,10 +372,16 @@ font-family: "IBM Plex Mono", 'Courier New';
 
 .mapContainer img{
     z-index: 0;
+    display: block;
+    width: 330px;
+    height: 320px;
+    min-width: 330;
 }
 
+
 #matsalentooltip, 
-#Repstudiotooltip
+#Repstudiotooltip,
+#B-salentooltip
 {
     display: none;
     position: absolute;
@@ -390,19 +396,7 @@ font-family: "IBM Plex Mono", 'Courier New';
     z-index: 10;
 }
 
-.tooltip {
-    display: none;
-    position: absolute;
-    transform: translate(-50%, -100%);
-    background-color: #002736;
-    color: #00FFFF;
-    padding: 10px;
-    border: 2px solid #00FFFF;
-    font-family: "Onest", Verdana;
-    width: max-content;
-    max-width: 200px;
-    z-index: 10;
-}
+
 
 #matsalentooltip{
     left: 34px;
@@ -412,6 +406,36 @@ font-family: "IBM Plex Mono", 'Courier New';
     left: 23px;
     top: 108px;
 
+}
+
+#B-salentooltip{
+    left: 246px;
+    top: 40px;
+}
+
+{
+    left: ;
+    top: ;
+}
+
+{
+    left: ;
+    top: ;
+}
+
+{
+    left: ;
+    top: ;
+}
+
+{
+    left: ;
+    top: ;
+}
+
+{
+    left: ;
+    top: ;
 }
 
 #matsalentooltip::after,
@@ -426,11 +450,6 @@ font-family: "IBM Plex Mono", 'Courier New';
     border-style: solid;
     border-color: black transparent transparent transparent;
 }
-
-
-
-
-
 
 
 
