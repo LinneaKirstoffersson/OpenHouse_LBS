@@ -378,9 +378,8 @@ font-family: "IBM Plex Mono", 'Courier New';
 .mapContainer img{
     z-index: 0;
     display: block;
-    width: 330px;
-    height: 320px;
     min-width: 330;
+    min-height: 320;
 }
 
 
@@ -393,7 +392,14 @@ font-family: "IBM Plex Mono", 'Courier New';
 #FotoFilmtooltip,
 #PoddRumtooltip,
 #AWAItooltip,
-#Spelgrafiktooltip
+#Spelgrafiktooltip,
+#A-8tooltip,
+#A-7tooltip,
+#A-6tooltip,
+#A-5tooltip,
+#A-4tooltip,
+#A-3tooltip,
+#Grafiskdesigntooltip
 {
     display: none;
     position: absolute;
@@ -459,6 +465,43 @@ font-family: "IBM Plex Mono", 'Courier New';
     top: 310px;
 }
 
+#A-8tooltip{
+    left: 35px;
+    top: 230px;
+}
+
+#A-7tooltip{
+    left: 35;
+    top: 55;
+}
+
+#A-6tooltip{
+    left:92px ;
+    top: 53px;
+}
+
+#A-5tooltip{
+    left:135px ;
+    top: 35px;
+}
+
+#A-4tooltip{
+    left:218px ;
+    top: 53px;
+}
+
+#A-3tooltip{
+    left: 285px;
+    top: 80px;
+}
+
+#Grafiskdesigntooltip{
+    left: 65px;
+    top: 330px;
+}
+
+
+
 #matsalentooltip::after,
 #Repstudiotooltip::after,
 #B-salentooltip::after,
@@ -468,7 +511,14 @@ font-family: "IBM Plex Mono", 'Courier New';
 #FotoFilmtooltip::after,
 #PoddRumtooltip::after,
 #AWAItooltip::after,
-#Spelgrafiktooltip::after
+#Spelgrafiktooltip::after,
+#A-8tooltip::after,
+#A-7tooltip::after,
+#A-6tooltip::after,
+#A-5tooltip::after,
+#A-4tooltip::after,
+#A-3tooltip::after,
+#Grafiskdesigntooltip
 {        /*tagit från w3shools*/
     content: "";
     position: absolute;

@@ -65,7 +65,15 @@ const places = [ /*skapar en array för att hålla de olika värderna i */
     ["FotoFilm","FotoFilmtooltip"],
     ["PoddRum","PoddRumtooltip"],
     ["AWAI", "AWAItooltip"],
-    ["Spelgrafik", "Spelgrafiktooltip"]
+    ["Spelgrafik", "Spelgrafiktooltip"],
+    ["A-8","A-8tooltip"],
+    ["A-7","A-7tooltip"],
+    ["A-6","A-6tooltip"],
+    ["A-5","A-5tooltip"],
+    ["A-4","A-4tooltip"],
+    ["A-3","A-3tooltip"],
+    ["Grafiskdesign","Grafiskdesigntooltip"],
+    
 ];
 
 //floor 2 plats tool tip
